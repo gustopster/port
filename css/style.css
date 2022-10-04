@@ -71,7 +71,7 @@ input[type="number"] {
     padding: auto;
     margin: 10px;
     border-radius: 20%;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(img/Imob.PNG);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(/img/Imob.PNG);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -80,7 +80,7 @@ input[type="number"] {
     padding: auto;
     margin: 10px;
     border-radius: 20%;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(img/Agenda.PNG);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(/img/Agenda.PNG);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
