@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav class="bg-dark navbar navbar-expand-sm navbar-light bg-light">
+        <button id="botaoToggler" class="bg-white navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+            aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="index.html"><img src="img/Logo-tipo.gif" class="navbar-brand"></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 p-2">
+                <li class="nav-item">
+                    <a class="text-white nav-link" href="#">Portfólio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-white nav-link" href="#">Experiências</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-white nav-link disabled" href="#">Educação</a>
+                </li>
+            </ul>
+            <!--Contato INICIO-->
+            <button id="botaoContato" type="button" class="btn btn-success ml-1 mr-5" data-toggle="modal"
+                data-target="#modalExemplo">
+                Contato
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        </div>
+                        <!--BOTÃO FECHAR MODAL INICIO-->
+                        <button type="button" class="close bg-danger text-white p-3" data-dismiss="modal"
+                            aria-label="Fechar">X
+                        </button>
+                        <!--BOTÃO FECHAR MODAL FINAL-->
+                        <div class="modal-body">
+                            <div class='container row-md'>
+                                <form action="#botaoContato" method="get" id="form-contato"
+                                    class="shadow-lg p-5 mb-5 border border-dark">
+                                    <div class="form-group">
+                                        <label for="nome" class="text-dark">Nome</label>
+                                        <input type="text" class="form-control" id="nome" name="nome"
+                                            placeholder="Seu Nome">
+                                        <span class='msg-erro msg-nome'></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="text-dark">E-mail</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Seu E-mail">
+                                        <span class='msg-erro msg-email'></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="text" class="text-dark">WhatsApp</label>
+                                        <input type="number" onkeypress="return apenasNumeros()"
+                                            placeholder="Ex:Add 55+DDD+Number" class="form-control" id="WhatsApp"
+                                            name="WhatsApp" oninput="javascript: 
+                                        if (this.value.length > this.maxLength)
+                                        this.value = this.value.slice(0, this.maxLength);" type="number" minlength="11"
+                                            maxlength="13">
+                                        <span class='msg-erro msg-WhatsApp'></span>
+                                    </div>
+                                    <button type="submit" class="btn-tarefa btn btn-lg btn-block bg-success text-white">
+                                        Enviar
+                                    </button>
+                                </form>
+                            </div>
+                            <!--Footer INICIO MODAL-->
+                            <footer id="footer" class="footer bg-transparent">
+                                <div class="row">
+                                    <div class="col-md text-center">
+                                        <h6 class="text-center">&copy <a href="https://www.instagram.com/gustopster/"
+                                                target="_blank" class="text-success">gustopster</a> todos direitos
+                                            reservados
+                                        </h6>
+                                    </div>
+                            </footer>
+                            <!--Footer FINAL MODAL-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Contato FINAL-->
+            <h6 class="my-2 text-white lead">Pesquise também...</h6>
+            <form class="d-flex ml-2 mr-5 my-3" role="search">
+                <input class="form-control" type="search" placeholder="Ex:Javascript" aria-label="Search">
+                <button class="btn btn-outline-success mr-2" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <!--Seções de Conteúdo INICIO-->
+
+    <!--Seções de Conteúdo FINAL-->
+    <!--Footer INICIO-->
+    <footer id="footer" class="footer bg-transparent">
+        <div class="row">
+            <div class="col-md text-center">
+                <h6 class="text-center">&copy <a href="https://www.instagram.com/gustopster/" target="_blank"
+                        class="text-success">gustopster</a> todos direitos
+                    reservados
+                </h6>
+            </div>
+    </footer>
+    <!--Footer FINAL-->
+    <!--Scripts Personalizados Inicio-->
+    <script type="text/javascript" src="js/verificadorCamps.js"></script>
+    <!--Scripts Personalizados Inicio-->
+
+    <!--Scripts BootsTrap Inicio-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!--Scripts BootsTrap Final-->
+</body>
+
+</html>

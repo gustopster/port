@@ -1,0 +1,34 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.msg-erro {
+    color: red;
+}
+.navbar-brand {
+    height: 155px;
+    width: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: initial;
+  justify-content: space-between;
+}
+#botaoToggler {
+    margin: auto;
+    padding: auto;
+}
+#botaoContato {
+    margin: auto;
+    padding: auto;
+    margin-left: -2.5%;
+}
