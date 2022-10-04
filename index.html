@@ -7,118 +7,198 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Portfolio</title>
+    <title>Portfolio | Gustavo Gomes (gustopster)</title>
 </head>
 
-<body>
-    <nav class="bg-dark navbar navbar-expand-sm navbar-light bg-light">
-        <button id="botaoToggler" class="bg-white navbar-toggler" type="button" data-toggle="collapse"
+<body id="geralSite" class="text-light">
+    <nav class="navbar navbar-expand-sm">
+        <button id="botaoToggler" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-            aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
+            aria-label="Alterna navegação"><b>MENU</b>
         </button>
-        <a href="index.html"><img src="img/Logo-tipo.gif" class="navbar-brand"></a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <a href="index.html"><img src="img/Logo-tipo.gif" class="navbar-brand" width="140" height="130"></a>
+        <div id="navbarTogglerDemo03" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0 p-2">
                 <li class="nav-item">
-                    <a class="text-white nav-link" href="#">Portfólio</a>
+                    <a class="text-light nav-link " href="#cvzaum">
+                        <h3>Sobre</h3>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="text-white nav-link" href="#">Experiências</a>
+                    <a class="text-light nav-link " href="#gifUmProjeto">
+                        <h3>Projetos</h3>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="text-white nav-link disabled" href="#">Educação</a>
+                    <a class="text-light nav-link " href="#agradecimentos">
+                        <h3>Agradecimentos</h3>
+                    </a>
                 </li>
+                <!--Contato INICIO-->
+                <button id="botaoContatoCabeçalho" type="button" class="btn" data-toggle="modal"
+                    data-target="#modalExemplo">
+                    <b>Contato</b>
+                </button>
             </ul>
-            <!--Contato INICIO-->
-            <button id="botaoContato" type="button" class="btn btn-success ml-1 mr-5" data-toggle="modal"
-                data-target="#modalExemplo">
-                Contato
-            </button>
             <!-- Modal -->
             <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                        </div>
-                        <!--BOTÃO FECHAR MODAL INICIO-->
-                        <button type="button" class="close bg-danger text-white p-3" data-dismiss="modal"
-                            aria-label="Fechar">X
-                        </button>
-                        <!--BOTÃO FECHAR MODAL FINAL-->
-                        <div class="modal-body">
-                            <div class='container row-md'>
-                                <form action="#botaoContato" method="get" id="form-contato"
-                                    class="shadow-lg p-5 mb-5 border border-dark">
-                                    <div class="form-group">
-                                        <label for="nome" class="text-dark">Nome</label>
-                                        <input type="text" class="form-control" id="nome" name="nome"
-                                            placeholder="Seu Nome">
-                                        <span class='msg-erro msg-nome'></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email" class="text-dark">E-mail</label>
-                                        <input type="email" class="form-control" id="email" name="email"
-                                            placeholder="Seu E-mail">
-                                        <span class='msg-erro msg-email'></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="text" class="text-dark">WhatsApp</label>
-                                        <input type="number" onkeypress="return apenasNumeros()"
-                                            placeholder="Ex:Add 55+DDD+Number" class="form-control" id="WhatsApp"
-                                            name="WhatsApp" oninput="javascript: 
+                            <div class="modal-body">
+                                <div class='container row-md text-right'>
+                                    <!--BOTÃO FECHAR MODAL INICIO-->
+                                    <button type="button" class="btn btn-lg bg-danger text-center text-light p-2 mb-2"
+                                        data-dismiss="modal" aria-label="Fechar">X
+                                    </button>
+                                    <!--BOTÃO FECHAR MODAL FINAL-->
+                                    <h5 class="text-center">Informe os seus dados para entrar em Contato</h5>
+                                    <form action="index.html" method="get" id="form-contato"
+                                        class="shadow-lg p-5 mb-5 border border-dark text-left">
+                                        <div class="form-group">
+                                            <label for="nome" class="text-light">Nome</label>
+                                            <input type="text" class="form-control" id="nome" name="nome"
+                                                placeholder="Seu Nome">
+                                            <span class='msg-erro msg-nome'></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email" class="text-light">E-mail</label>
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                placeholder="Seu E-mail">
+                                            <span class='msg-erro msg-email'></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="text" class="text-light">WhatsApp</label>
+                                            <input type="number" placeholder="55+DDD+Número" class="form-control"
+                                                id="WhatsApp" name="WhatsApp" oninput="javascript: 
                                         if (this.value.length > this.maxLength)
                                         this.value = this.value.slice(0, this.maxLength);" type="number" minlength="11"
-                                            maxlength="13">
-                                        <span class='msg-erro msg-WhatsApp'></span>
-                                    </div>
-                                    <button type="submit" class="btn-tarefa btn btn-lg btn-block bg-success text-white">
-                                        Enviar
-                                    </button>
-                                </form>
+                                                maxlength="13">
+                                            <span class='msg-erro msg-WhatsApp'></span>
+                                        </div>
+                                        <button id="botaoEnviar" type="submit"
+                                            class="btn-tarefa btn btn-lg btn-block text-dark enviarModal">
+                                            Enviar
+                                        </button>
+                                    </form>
+                                </div>
+                                <!--Footer INICIO MODAL-->
+                                <footer id="footer" class="footer bg-transparent">
+                                    <div class="row">
+                                        <div class="col-md text-center">
+                                            <h6 class="text-center text-light">&copy <a
+                                                    href="https://www.linkedin.com/in/gustavo-gomes-ggs/"
+                                                    target="_blank" class="footerGeral">gustopster</a> todos direitos
+                                                reservados
+                                            </h6>
+                                        </div>
+                                </footer>
+                                <!--Footer FINAL MODAL-->
                             </div>
-                            <!--Footer INICIO MODAL-->
-                            <footer id="footer" class="footer bg-transparent">
-                                <div class="row">
-                                    <div class="col-md text-center">
-                                        <h6 class="text-center">&copy <a href="https://www.instagram.com/gustopster/"
-                                                target="_blank" class="text-success">gustopster</a> todos direitos
-                                            reservados
-                                        </h6>
-                                    </div>
-                            </footer>
-                            <!--Footer FINAL MODAL-->
                         </div>
                     </div>
                 </div>
             </div>
-            <!--Contato FINAL-->
-            <h6 class="my-2 text-white lead">Pesquise também...</h6>
-            <form class="d-flex ml-2 mr-5 my-3" role="search">
-                <input class="form-control" type="search" placeholder="Ex:Javascript" aria-label="Search">
-                <button class="btn btn-outline-success mr-2" type="submit">Buscar</button>
-            </form>
         </div>
     </nav>
     <!--Seções de Conteúdo INICIO-->
-
+    <section>
+        <div id="cvzaum" class="container-fluid text-center my-4">
+            <h2 class="text-light"><b>"Gustopster"</b></h2>
+            <p class=" p-2 text-light">Esse nome fictício veio através de uma vontade de mudar profissionalmente.
+                Realizei alguns treinamentos para ingressar no MKT Digital,
+                mas acabei me descobrindo em um dos módulos e esse era o de desenvolvimento web. Eu já conhecia,
+                pois sou formado em Redes de Computadores e possuo uma graduação em Gestão e Governança de TI, mas
+                nunca tive
+                o interesse antes. Depois de estudar e entender como HTML, CSS, Lógica de Programação (Javascript)
+                funcionam. Acabei me apaixonando pela área e hoje desejo muito Ingressar nela.
+            </p>
+            <a class="btn embrevezaum text-dark" href="pdf/Gustavo Gomes CV 2022 Atualizado Setembro.pdf"
+                target="_blank"><b>Baixe ou Visualize meu CV</b></a>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid my-5">
+            <h1 id="gifUmProjeto" class="col-sm-5 p-lg-5 mx-auto text-center text-light mb-3"><b>Projetos</b></h1>
+            <div id="agendzaum" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+                <div class="col-sm-5 p-lg-5 mx-auto">
+                    <h1 class="text-light">Agenda Digital</h1>
+                    <h5 class="text-light">Esse projeto, pude colocar em prática todo meu conhecimento em Javascript.
+                        Realizei integrações com o DOM e pude fazer uma Lista de Tarefas que armazena os dados no
+                        LocalStorage
+                        do Navegador.</h5>
+                    <a class="btn embrevezaum text-dark" href="https://gustopster.github.io/Agenda-Digital/"
+                        target="_blank"><b>Confira</b></a>
+                </div>
+            </div>
+            <div id="imobzaum" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+                <div class="col-sm-5 p-lg-5 mx-auto">
+                    <h1 class="text-light">Imobiliária</h1>
+                    <h5 class="text-light">Nesse Projeto tive a idéia de criar uma imobiliária no formato slider.
+                        Realizei
+                        algumas configurações no CSS, para que a imagem ficasse responsiva em qualquer dispositivo.</h5>
+                    <a class="btn embrevezaum text-dark" href="https://gustopster.github.io/PROJETO-IMOBILIARIA/"
+                        target="_blank"><b>Confira</b></a>
+                </div>
+            </div>
+        </div>
+            <!--Botão Voltar para o TOPO INICIO -->
+            <div class="text-center">
+                <a href="#geralSite" class="btn embrevezaum text-dark"><b>&uarr;</b></a>
+            </div>
+            <!--Botão Voltar para o TOPO FINAL -->
+    </section>
     <!--Seções de Conteúdo FINAL-->
     <!--Footer INICIO-->
-    <footer id="footer" class="footer bg-transparent">
-        <div class="row">
-            <div class="col-md text-center">
-                <h6 class="text-center">&copy <a href="https://www.instagram.com/gustopster/" target="_blank"
-                        class="text-success">gustopster</a> todos direitos
-                    reservados
-                </h6>
+    <section>
+        <footer class="container py-5">
+            <div class="row">
+                <div class="col-6 col-md text-center">
+                    <h5>Fontes | Ajuda</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-light" href="https://getbootstrap.com.br/" target="_blank">BootsTrap</a></li>
+                        <li><a class="text-light" href="https://github.com/CodeByZach/pace" target="_blank">Hubspot |
+                                CodeByZach</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md text-center">
+                    <h5>Onde me Encontrar</h5>
+                    <ul class="list-unstyled text-small">
+                        <li>
+                            <a class="text-light" href="https://www.linkedin.com/in/gustavo-gomes-ggs/"
+                                target="_blank">Linkedin</a>
+                        </li>
+                        <li>
+                            <a class="text-light"
+                                href="https://api.whatsapp.com/send?phone=5515991180605&text=Visualizei%20seu%20Portf%C3%B3lio.%20Posso%20solicitar%20um%20or%C3%A7amento%20seu%3F"
+                                target="_blank">WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md text-center">
+                    <h5>Agradecimentos</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-light"
+                                href="https://www.linkedin.com/in/matheus-henrique-carvalho-2a6007202/"
+                                target="_blank">Matheus Carvalho</a></li>
+                        <li><a class="text-light" href="https://www.linkedin.com/in/leticia-gomes-a2a902236/"
+                                target="_blank">Leticia Gomes</a></li>
+                    </ul>
+                </div>
             </div>
-    </footer>
+            <div id="agradecimentos" class="col-12 col-md text-center ml-auto">
+                <small class="text-light">&copy <a href="https://www.linkedin.com/in/gustavo-gomes-ggs/" target="_blank"
+                        class="footerGeral">gustopster</a> todos direitos
+                    reservados</small>
+            </div>
+        </footer>
+    </section>
     <!--Footer FINAL-->
     <!--Scripts Personalizados Inicio-->
+    <script src="js/pace.js"></script>
     <script type="text/javascript" src="js/verificadorCamps.js"></script>
-    <!--Scripts Personalizados Inicio-->
-
+    <!--Scripts Personalizados FINAL-->
     <!--Scripts BootsTrap Inicio-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

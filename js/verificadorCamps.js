@@ -1,29 +1,3 @@
-// Enviar Mensagem ao WhatsApp do Prestador
-function mandarWhatsApp() {
-	// Informações do Usuário INICIO \\
-	let nome = document.getElementById("nome").value;
-	let email = document.getElementById("email").value;
-	let WhatsApp = document.getElementById("WhatsApp").value;
-	// Informações do Usuário FINAL \\
-
-	// Mensagem do WhatsApp Para o Cliente INICIO \\
-	let abrirWhats = window.open(`https://wa.me/5515991180605?text=Ol%C3%A1%2C%20me%20chamo(${nome})%20e%20visualizei%20seu%20Portf%C3%B3lio.%20Podemos%20marcar%20uma%20reuni%C3%A3o%3F%20(esse%20%C3%A9%20meu%20whats%20${WhatsApp}%20e%20email%20S{email}%20para%20retorno).%20Obrigado(a)!`, '_blank');
-	// Mensagem do WhatsApp Para o Cliente FINAL \\
-};
-
-//Apenas Números no Input//
-
-function apenasNumeros(e) {
-	let theEvent = e || window.event;
-	let key = theEvent.keyCode || theEvent.which;
-	key = String.fromCharCode(key);
-	//let regex = /^[0-9.,]+$/;
-	let regex = /^[0-9.]+$/;
-	if (!regex.test(key)) {
-		theEvent.returnValue = false;
-		if (theEvent.preventDefault) theEvent.preventDefault();
-	}
-};
 //Validar Campos
 const form = document.getElementById("form-contato");
 
@@ -41,9 +15,6 @@ function validaCadastro(evt) {
 	let fWhatsApp = /\d\d\d\d\d\d\d\d\d\d\d\d\d/;
 	let contErro = 0;
 
-	if (contErro > 0) {
-		evt.preventDefault();
-	};
 
 	/* Validação do campo nome */
 	caixa_nome = document.querySelector('.msg-nome');
@@ -68,7 +39,7 @@ function validaCadastro(evt) {
 		caixa_email.style.display = 'block';
 		contErro += 1;
 	}
-	
+
 	/* Validação do campo WhatsApp */
 	caixa_WhatsApp = document.querySelector('.msg-WhatsApp');
 	if (WhatsApp.value == "") {
@@ -83,4 +54,20 @@ function validaCadastro(evt) {
 		contErro += 1;
 	}
 
+	if (contErro > 0) {
+		evt.preventDefault();
+	}
+};
+// Enviar Mensagem ao WhatsApp do Prestador
+function mandarWhatsApp() {
+
+	// Informações do Usuário INICIO \\
+	let nome = document.getElementById("nome").value;
+	let email = document.getElementById("email").value;
+	let WhatsApp = document.getElementById("WhatsApp").value;
+	// Informações do Usuário FINAL \\
+
+	// Mensagem do WhatsApp Para o Cliente INICIO \\
+	let abrirWhats = window.open(`https://wa.me/5515991180605?text=Ol%C3%A1%2C%20me%20chamo(${nome})%20e%20visualizei%20seu%20Portf%C3%B3lio.%20Podemos%20marcar%20uma%20reuni%C3%A3o%3F%20(esse%20%C3%A9%20meu%20whats%20${WhatsApp}%20e%20email%20${email}%20para%20retorno).%20Obrigado(a)!`, '_blank');
+	// Mensagem do WhatsApp Para o Cliente FINAL \\
 };

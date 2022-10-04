@@ -1,4 +1,1 @@
-Falta reparar o Bug do botão contato.
-Ocorre no primeiro envio do formulário em branco (Era pra haver o bloqueio, mas o script está deixando passar), 
-mas após o segundo ele fixa e não deixa passar.
-
+Realizar o campo CV e Educação;
