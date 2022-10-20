@@ -106,13 +106,13 @@ input[type="number"] {
 	position: relative;
 	height: 100%;
 	width:100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('Imob.PNG');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('JavascriptThum.jpg');
 	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: fixed;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('Agenda.PNG');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('Imob.PNG');
 	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: fixed;
