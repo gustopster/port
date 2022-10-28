@@ -17,6 +17,10 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
     -moz-appearance: textfield;
 }
+#perfilImg{
+    padding: 5px;
+    border-radius: 50%;
+}
 #cvzaum {
     margin-top: 190px;
     margin-bottom: 200px;
