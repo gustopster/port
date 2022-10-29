@@ -37,7 +37,9 @@ input[type="number"] {
 .msg-erro {
     color: red;
 }
-
+.consultoria {
+    color: aquamarine;
+}
 #botaoToggler {
     background-color: aquamarine;
 }
