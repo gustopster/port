@@ -177,8 +177,7 @@ ingles.addEventListener("click", function(){
                 <div class="p-1">
                     <img id="perfilImg" src="css/Perfil.jpg">
                     <h2 class=""><b>Gustavo "Gustopster" Gomes</b></h2>
-                    <article class="p-3 text-center">From a simple customer service, to the creation of a complex application
-                        complex application (That's me lol).
+                    <article class="p-3 text-center">From a simple customer service, to the creation of a complex application (That's me lol).
                         When I started in the area I never imagined that I could learn so much and apply it in any
                         situation. For this reason I chose
                         to specify everything I know in my portfolio. I left the two areas that I work (Infrastructure and
