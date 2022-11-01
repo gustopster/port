@@ -116,7 +116,7 @@ ingles.addEventListener("click", function(){
                                 <div class='container row-md text-right'>
                                     <!--BOTÃO FECHAR MODAL INICIO-->
                                     <button type="button" class="btn btn-lg bg-danger text-center text-light p-2 mb-2"
-                                        data-dismiss="modal" aria-label="Fechar">X
+                                        data-dismiss="modal" aria-label="Close">X
                                     </button>
                                     <!--BOTÃO FECHAR MODAL FINAL-->
                                     <h5 class="text-center">Please enter your contact information</h5>
@@ -125,18 +125,18 @@ ingles.addEventListener("click", function(){
                                         <div class="form-group">
                                             <label for="nome" class="text-light">Name</label>
                                             <input type="text" class="form-control" id="nome" name="nome"
-                                                placeholder="Seu Nome">
+                                                placeholder="Type your Name">
                                             <span class='msg-erro msg-nome'></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="email" class="text-light">E-mail</label>
                                             <input type="email" class="form-control" id="email" name="email"
-                                                placeholder="Seu E-mail">
+                                                placeholder="Type your E-mail">
                                             <span class='msg-erro msg-email'></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="text" class="text-light">Phone (WhatsApp)</label>
-                                            <input type="number" placeholder="55+DDD+Número" class="form-control"
+                                            <input type="number" placeholder="1+DDD+Number" class="form-control"
                                                 id="WhatsApp" name="WhatsApp" oninput="javascript: 
                                         if (this.value.length > this.maxLength)
                                         this.value = this.value.slice(0, this.maxLength);" type="number" minlength="11"
