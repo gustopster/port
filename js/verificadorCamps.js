@@ -230,7 +230,7 @@ ingles.addEventListener("click", function(){
         </div>
     </section><!-- slider banner	FINAL -->
     <!--Botão Voltar para o TOPO INICIO -->
-    <div class="text-right p-1">
+    <div class="text-center">
         <a href="#geralSite" class="btn embrevezaum text-dark"><b>&uarr;</b></a>
     </div>
     <!--Botão Voltar para o TOPO FINAL -->
