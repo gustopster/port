@@ -170,7 +170,8 @@ ingles.addEventListener("click", function(){
     </nav>
     <section class="mb-5">
         <div class="text-right mr-2 p-1">
-        <a href="index.html" class="btn btn-sm text-light"><img src="css/ptbr.png" width="25"> PT </a>
+	Traduzir para:
+        <a href="index.html" class="btn btn-sm text-light"><img src="css/ptbr.png" width="25"> PT BR </a>
         </div>
         <div class="container text-center">
             <div class="row">
