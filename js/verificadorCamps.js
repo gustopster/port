@@ -184,10 +184,10 @@ ingles.addEventListener("click", function(){
                         Development). I have aptitude in both and I love
                         and I love each one. So if there is any interest check out my CVs below:
                     </article>
-                    <a class="btn embrevezaum text-dark mb-3" href="pdf/CV GGS Desenvolvedor Front End.pdf"
+                    <a class="btn embrevezaum text-dark mb-3" href="pdf/CV GGS DEV Front End ENGLISH.pdf"
                         target="_blank"><b>Front End Developer</b></a>
                     <a class="btn bg-transparent btn-outline-light mb-3 analistaGTI"
-                        href="pdf/CV GGS Gestão em GOV TI.pdf" target="_blank"><b>IT Management Analyst</b></a>
+                        href="pdf/CV GGS Gestão em GOV TI ENGLISH.pdf" target="_blank"><b>IT Management Analyst</b></a>
                     <article class="p-3 text-center">Now if you are not a recruiter and need a technical help in your enterprise. Click <a href="https://api.whatsapp.com/send?phone=5515991180605&text=Visualizei%20seu%20Portf%C3%B3lio.%20Posso%20solicitar%20um%20or%C3%A7amento%3F" target="_blank" class="text-transparent consultoria"><b>HERE</b></a> to schedule a Consulting.</article>
                 </div>
             </div>
