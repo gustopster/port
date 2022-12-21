@@ -271,7 +271,7 @@ ingles.addEventListener("click", function(){
                         <li><a class="text-light"
                                 href="https://www.linkedin.com/in/matheus-henrique-carvalho-2a6007202/"
                                 target="_blank">Matheus Carvalho</a></li>
-                        <li><a class="text-light" href="https://www.linkedin.com/in/leticia-gomes-a2a902236/"
+                        <li><a class="text-light" href="https://www.linkedin.com/in/leticia-gomes-lgr/"
                                 target="_blank">Leticia Gomes</a></li>
                     </ul>
                 </div>
